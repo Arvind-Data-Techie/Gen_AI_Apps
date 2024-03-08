@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Function to return the response
+
+#Uses Simple LLM Wrapper
 def load_answer(question):
     llm = OpenAI(model_name="gpt-3.5-turbo-instruct",temperature=0)
     answer=llm(question)
